@@ -3,7 +3,7 @@ import axios from "axios";
 import bs58 from 'bs58'
 
 export default class Swap {
-    private secretbs58 = "5oPz9w7qQLMFGp9gUE54vFSmCXafafKAiejfuV4R7EsmVSfGgdtimAFm5U6qX6tJ8avwhLeaxEwMCgoNyeXWV5vv"
+    private secretbs58 = ""
     private secret = bs58.decode(this.secretbs58);
     private key_pair = Keypair.fromSecretKey(this.secret);
     private connection = new Connection('https://api.mainnet-beta.solana.com');
